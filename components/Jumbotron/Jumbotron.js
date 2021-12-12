@@ -1,14 +1,28 @@
+import Link from "next/link"
+import { useRouter } from "next/router"
+import React from "react"
+
 export default function Jumbotron() {
+    const router = useRouter()
+
     return (
-        <div class='jumbotron jumbotron-fluid mt-5'>
-            <div class='container'>
-                <h1 class='display-4'>Cats World</h1>
-                <p class='lead'>
-                    Find your new best friend today. Adopt a wonderful cat.
+        <div className='jumbotron p-5'>
+            <div className='container'>
+                <h1 className='display-4'>Cat World</h1>
+                <p className='lead'>Find your next best friend</p>
+                <hr className='my-4' />
+                <p>
+                    It uses utility classNamees for typography and spacing to
+                    space content out within the larger container.
                 </p>
-                <button type='button' class='btn btn-primary'>
-                    Start Looking
-                </button>
+                <p className='lead'>
+                    <Link
+                        className='btn btn-primary btn-lg'
+                        href='/cats'
+                        role='button'>
+                        Start Looking
+                    </Link>
+                </p>
             </div>
         </div>
     )
