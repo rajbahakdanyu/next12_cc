@@ -1,12 +1,14 @@
 export default function Jumbotron() {
     return (
-        <div class='jumbotron jumbotron-fluid'>
+        <div class='jumbotron jumbotron-fluid mt-5'>
             <div class='container'>
-                <h1 class='display-4'>Fluid jumbotron</h1>
+                <h1 class='display-4'>Cats World</h1>
                 <p class='lead'>
-                    This is a modified jumbotron that occupies the entire
-                    horizontal space of its parent.
+                    Find your new best friend today. Adopt a wonderful cat.
                 </p>
+                <button type='button' class='btn btn-primary'>
+                    Start Looking
+                </button>
             </div>
         </div>
     )
