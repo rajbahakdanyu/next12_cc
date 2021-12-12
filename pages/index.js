@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Jumbotron from "../components/Jumbotron/Jumbotron"
 import Nav from "../components/Nav/Nav"
 import styles from "../styles/Home.module.css"
 
@@ -16,6 +17,7 @@ export default function Home() {
 
             <main>
                 <Nav />
+                <Jumbotron />
             </main>
         </div>
     )
